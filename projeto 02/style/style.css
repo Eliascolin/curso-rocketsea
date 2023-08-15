@@ -1,0 +1,100 @@
+body{
+
+margin: 0;
+
+font-family: 'Open Sans', sans-serif;
+
+}
+
+.page{
+
+width: 1000px;
+margin: 65px auto 0;
+border: 1px solid red;
+}
+
+nav{
+display:flex;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 55px;
+}
+
+
+
+ul{
+
+display: flex;
+gap: 48px;
+list-style: none;
+margin: 0;
+padding: 0;
+}
+
+
+ul li a:hover{
+
+
+    font-weight: bold;
+}
+
+ a{
+color:  #1F1534;
+text-decoration: none;
+
+}
+
+h1, ul{
+    font-family: 'Mulish', sans-serif;
+}
+
+main{
+display: flex;
+align-items: center;
+justify-content: space-between;
+
+
+}
+
+h1{
+
+font-size: 49px;
+align-items: 56px;
+color: #1F1534;
+font-weight: normal;
+width: 490px;
+}
+
+
+h1 span{
+
+    color: #89c5cc;
+    font-weight: bold;
+}
+
+
+p {
+    font-size: 14px;
+    line-height: 28px;
+    color: #7D7987;
+  }
+
+  button{
+
+text-transform: uppercase;
+font-family: 'Open Sans', sans-serif;
+
+  }
+
+
+
+  footer{
+
+font-size: 14px;
+line-height: 28px;
+  }
+
+  footer a{
+font-weight: bold;
+
+  }
