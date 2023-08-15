@@ -10,7 +10,7 @@ font-family: 'Open Sans', sans-serif;
 
 width: 1000px;
 margin: 65px auto 0;
-border: 1px solid red;
+
 }
 
 nav{
@@ -77,12 +77,27 @@ p {
     font-size: 14px;
     line-height: 28px;
     color: #7D7987;
+    margin: 40 0;
   }
 
   button{
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #69b99d;
+    border: 0;
+    padding: 14px 32px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
 
-text-transform: uppercase;
-font-family: 'Open Sans', sans-serif;
+  button:hover{
+
+    background-color: #85c2ad;
 
   }
 
@@ -92,6 +107,8 @@ font-family: 'Open Sans', sans-serif;
 
 font-size: 14px;
 line-height: 28px;
+text-align: center;
+margin-top: 80px;
   }
 
   footer a{
