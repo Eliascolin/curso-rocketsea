@@ -64,6 +64,8 @@ margin-top: 74px;
 
 }
 
+
+
 header p{
 
 
@@ -302,5 +304,11 @@ border: 0;
 
         background: #1deb7a;
 
+
+    }
+
+    input:invalid{
+
+border: 2px solid #ff0000;
 
     }
