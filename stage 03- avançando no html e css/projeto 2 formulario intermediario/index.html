@@ -33,7 +33,7 @@
 
 
             
-    <form >
+    <form  id="my-form">
 
 
 
@@ -43,12 +43,47 @@
             
             </legend>
 
+            <div class="input-wrapper">
+              
+              
+              
+              
+<div class="col-2">
+
+    <div class="input-wrapper">
 
 
-            <div class="imput-wrapper">
+        <label for="event-name">Name</label>
+        <input type="text"  id="event-name">
+        
+        
+       
+                    </div>
 
 
-<label for="event-name"></label>
+<div class="input-wrapper">
+
+
+<label for="event-lastName">Sobrenome</label>
+<input type="text"  id="event-lastName">
+
+
+
+</div>
+
+</div>
+
+              
+                
+
+
+               <label for="envent-email">Email <span>(digite um email válido)</span></label>
+               <input type="email"  id="envent-email">
+
+                <label for="event-password">Senha <span>(mínimo de 6 caracteres)</span></label>
+               <input type="password" id="event-password">
+
+
 
 
 
@@ -58,7 +93,50 @@
 
             </div>
 
+         
+             
+            <div class="input-wrapper">
+                
+                <legend>
+                    Informações do mentor 
+                </legend>
 
+
+                <label for="ivent-mentorName">Nome do seu mentor <span>(só o primeiro nome)</span></label>
+                <input type="text"  id="mentorName">
+
+
+                <div class="col-2">
+
+                    <div class="input-wrapper">
+                
+                
+                        <label for="event-name">Name</label>
+                        <input type="text"  id="event-name">
+                        
+                        
+                       
+                                    </div>
+                
+                
+                <div class="input-wrapper">
+                
+                
+                <label for="event-lastName">Sobrenome</label>
+                <input type="text"  id="event-lastName">
+                
+                
+                
+                </div>
+                
+                </div>
+
+
+            </div>
+
+
+
+            
         </fieldset>
 
 
@@ -70,6 +148,15 @@
 
         
     </div>
+
+
+    <footer>
+
+
+        <input class="button" type="submit" form="my-form" value="salvar evento">
+
+
+    </footer>
 
 
 
