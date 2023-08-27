@@ -8,6 +8,9 @@ font-family: 'Poppins', sans-serif;
 font-family: 'Staatliches', cursive; */
 
 
+body, input,  select, textarea{
+    font-family: 'Poppins', sans-serif;
+}
 
 
 header{
@@ -58,7 +61,7 @@ z-index: -1;
 body{
 
     background: #BFD7E4;
-    font-family: 'Poppins', sans-serif;
+   
 }
 
 .page{
@@ -202,5 +205,51 @@ margin-top: 22px;
     height: 23px;
 
 }
+.col-3{
 
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    
+    
+    }
+
+   
+ .col-3 > div:nth-child(1){
+    
+    
+    width: 300px;
+    
+    
+    }
+
+
+
+    footer{
+
+       
+       
+        display: flex;
+        flex-direction: column;
+        width: 750px;
+        margin-bottom: 64px;
+     
+
+
+    }
+
+  .button{
+        height: 51px;
+        width: 622px;
+        padding: 15px 40px;
+        border-radius: 8px;
+        background: #F67669;
+        color: #FFF;
+font-family: Archivo;
+font-size: 16px;
+font-weight: 600;
+line-height: 26px; 
+border: 0;
+
+    }
 
