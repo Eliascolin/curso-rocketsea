@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    
+}
+
+
+
+
+ul{
+    
+    list-style: none;
+}
+
+/* se utiliza para hacer referencia a la raíz del documento HTML */
+:root{
+    
+    font-size: 62.5%;/*assim todo sera beseado em 10px */
+    
+}
+
+
+body{
+    
+    background-color: #ece9fd;
+    padding: 6.0rem 2.3rem 6.6rem;
+    font-size: 1.6rem;
+    font-family: 'Epilogue',sans-serif;
+}
+
+
+h1{
+font-size: 2.5rem;
+line-height: 3rem;
+}
+
+main p:first-child{
+    color: #7158EF;
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+    line-height: 3.2rem;
+    margin-bottom: 1.7rem;
+
+}
