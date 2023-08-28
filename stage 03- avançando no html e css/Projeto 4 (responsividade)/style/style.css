@@ -30,17 +30,83 @@ body{
     font-family: 'Epilogue',sans-serif;
 }
 
+main{
+
+
+max-width: 33.0rem;
+margin: 0 auto;
+
+}
+
 
 h1{
 font-size: 2.5rem;
 line-height: 3rem;
+color: #090039;
+margin-bottom: 1.5rem;
+font-weight: 800;
 }
 
 main p:first-child{
     color: #7158EF;
-    letter-spacing: 0.3rem;
+    letter-spacing: 3px;
     text-transform: uppercase;
     line-height: 3.2rem;
     margin-bottom: 1.7rem;
+
+}
+
+
+/* estamos pegando um P que esta antesde um h1 */
+h1 + p{
+
+color: rgba(10,0,57,0.64);
+line-height: 3.2rem;
+margin-bottom: 3.2rem;
+}
+
+a{
+
+
+color:#090039;
+text-decoration: none;
+}
+
+
+a:hover{
+
+
+    color: #7158EF;
+    font-weight: bold;
+}
+
+
+ul{
+
+margin-top:  7.2rem;
+
+
+}
+
+
+ul li{
+
+font-weight: 700;
+font-size: 2.4rem;
+line-height: 3.2rem;
+color: #090039;
+max-width: 25.7rem;
+display: flex;
+align-items: flex-start;
+gap: 3.8rem;
+}
+
+
+ul li span{
+
+    font-size: 7.2rem;
+    line-height: 8.0rem;
+    letter-spacing: -2px;
+    color: #090039;
 
 }
