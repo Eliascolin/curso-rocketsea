@@ -1,0 +1,57 @@
+*{
+
+margin: 0;
+box-sizing: border-box;
+
+
+}
+
+.grid{
+
+display: grid;
+
+grid-template-columns: repeat(3,100px);
+grid-template-rows: repeat(3,100px);
+gap: 8px;
+
+
+/* 
+
+trabalha com o exo Y
+
+align-content: end; */
+
+
+/* 
+trabalha com exo X
+
+justify-content: center; */
+
+
+/* exo x y  */
+
+
+
+
+place-content: center;
+
+height: 100vh;
+width: 100vw;
+
+
+background-color: black;
+
+}
+
+.grid > div{
+
+background-color: cornflowerblue;
+
+}
+
+
+.grid div:nth-child(2){
+align-self: center;
+justify-self: center;
+
+}

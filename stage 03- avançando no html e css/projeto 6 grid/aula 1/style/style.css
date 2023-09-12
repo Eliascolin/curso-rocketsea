@@ -84,21 +84,27 @@ border: 1px solid red;
 }
  */
 
+body{
 
+margin: 0;
+
+
+}
 
  #app{
 
 
     display:grid; 
 
-   grid-template-areas:
-   "A B B" 
-   "A B A"
-   "A C D";
+   grid-template:
+   "A B B" 80px 
+   "A B B" 40px
+   "A C D" 50px / 80px 1fr 2fr;
 
     height: 100vh;
 
-    border: 2px solid red
+    gap: 30px;
+    padding: 30px;
     
     }
     
@@ -110,16 +116,24 @@ border: 1px solid red;
         
     #app header{
     
+grid-area: A;
+
     }
     
     #app main{
        
+grid-area: B;
+
         }
     
        
     
     
-    
+        #app footer{
+       
+            grid-area: C;
+            
+                    }
     
     
     
