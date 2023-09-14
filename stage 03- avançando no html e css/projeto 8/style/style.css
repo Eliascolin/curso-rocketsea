@@ -1,0 +1,40 @@
+*{
+
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+-webkit-font-smoothing:antialiased;
+-moz-osx-font-smoothing:grayscale;
+
+}
+
+
+
+:root{
+font-size: 62.5%;
+--color-base-explorer: #065E7C;
+}
+
+
+
+header{
+
+background-color: var(--color-base-explorer);
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+
+
+.input-wrapper label{
+
+width: 1px;
+height: 1px;
+overflow: hidden;
+position: absolute;
+
+
+}
+
+
