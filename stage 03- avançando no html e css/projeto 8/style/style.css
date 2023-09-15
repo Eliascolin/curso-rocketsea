@@ -9,6 +9,21 @@ box-sizing: border-box;
 }
 
 
+.body{
+
+display: grid;
+grid-template: 
+"a a a"
+"b b c"
+"b b c"
+"d d d";
+}
+
+.body > *{
+    
+    border: 1px solid red;
+    
+    }
 
 :root{
 font-size: 62.5%;
@@ -22,8 +37,22 @@ header{
 background-color: var(--color-base-explorer);
 display: flex;
 align-items: center;
-justify-content: center;
+justify-content: space-between;
+grid-area: a;
+padding: 2.8rem 1.2rem;
+min-width: 7.2rem;
 }
+
+
+header .headerImg{
+
+width: 4.0rem;
+height: 4.0rem;
+border-radius: 50%;
+
+
+}
+
 
 
 
@@ -38,3 +67,58 @@ position: absolute;
 }
 
 
+.input-wrapper input, input::placeholder{
+    width: 24rem ;
+    height:4.0rem;
+    padding: 1.2rem 1.4rem;
+    font-family: Mulish;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%;
+    background-color:#387E96 ;
+    color: #FFFFFF;
+    border: none;
+
+
+}
+
+
+.title{
+
+margin:3.0rem  2.2rem;
+margin-bottom: ;
+}
+
+
+.title h1{
+color: 202024;
+    font-family: Mulish;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160%;
+}
+
+
+
+
+
+
+
+
+.sidebar{
+
+grid-area: c;
+
+}
+
+
+
+
+footer{
+
+grid-area: d;
+
+
+}
