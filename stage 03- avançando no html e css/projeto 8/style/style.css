@@ -9,15 +9,10 @@ box-sizing: border-box;
 }
 
 
-.body{
 
-display: grid;
-grid-template: 
-"a a a"
-"b b c"
-"b b c"
-"d d d";
-}
+
+
+
 
 .body > *{
     
@@ -28,6 +23,7 @@ grid-template:
 :root{
 font-size: 62.5%;
 --color-base-explorer: #065E7C;
+ font-family: 'Mulish', sans-serif; 
 }
 
 
@@ -38,7 +34,6 @@ background-color: var(--color-base-explorer);
 display: flex;
 align-items: center;
 justify-content: space-between;
-grid-area: a;
 padding: 2.8rem 1.2rem;
 min-width: 7.2rem;
 }
@@ -87,11 +82,11 @@ position: absolute;
 .title{
 
 margin:3.0rem  2.2rem;
-margin-bottom: ;
+
 }
 
 
-.title h1{
+.title h1, .sidebar h2{
 color: 202024;
     font-family: Mulish;
     font-size: 24px;
@@ -100,19 +95,47 @@ color: 202024;
     line-height: 160%;
 }
 
+.likes{
+
+margin-top: .8rem;
+
+}
+
+.likes img{
+
+width: 4rem;
+height: 4rem;
+
+}
+
+.likes img:nth-child(2) {
+    margin-left: 1rem; /* Puedes ajustar el valor del margen según tus preferencias */
+  }
 
 
+  main .text-main{
+display: none;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    padding: 0 2.2rem;
+  }
 
-
+  
 
 
 
 .sidebar{
-
-grid-area: c;
-
+padding: 0 2.2rem;
 }
 
+
+.sidebar .card{
+
+
+    display: flex;
+}
 
 
 
