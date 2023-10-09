@@ -1,0 +1,240 @@
+*{
+
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+-webkit-font-smoothing:antialiased;
+-moz-osx-font-smoothing:grayscale;
+
+}
+
+
+
+
+
+
+
+
+
+:root{
+font-size: 62.5%;
+--color-base-explorer: #065E7C;
+--color-base-letter:#202024;
+--color-base-p:#121214;
+ font-family: 'Mulish', sans-serif; 
+
+
+}
+
+@media(min-width: 1000px){
+
+
+body{
+
+display: grid;
+grid-template-areas: "a a a "
+                      "b b c"
+                       "b b c"
+                       "d d d ";
+
+        
+
+
+}
+
+header{
+
+grid-area: a;
+
+}
+
+main{
+        grid-area: b;
+}
+ .sidebar{
+
+grid-area: c;
+
+ }
+
+ footer{
+
+grid-area: d;
+
+ }
+
+
+}
+
+
+header{
+
+    
+background-color: var(--color-base-explorer);
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 2.8rem 1.2rem;
+width: 100%;
+
+}
+
+
+
+
+header .headerImg{
+
+width: 4.0rem;
+height: 4.0rem;
+border-radius: 50%;
+overflow: hidden;
+
+}
+
+
+
+
+.input-wrapper label{
+
+width: 1px;
+height: 1px;
+overflow: hidden;
+position: absolute;
+
+
+}
+
+
+.input-wrapper input, input::placeholder{
+    width: 24rem ;
+    height:4.0rem;
+    padding: 1.2rem 1.4rem;
+    font-family: Mulish;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%;
+    background-color:#387E96 ;
+    color: #FFFFFF;
+    border: none;
+
+
+}
+
+
+
+
+
+.title{
+
+margin: 3.0rem  2.2rem;
+
+}
+
+
+.title h1, .sidebar h2{
+color: 202024;
+    
+    font-size: 2.4rem;
+    
+    font-weight: 700;
+    line-height: 160%;
+    color: var(--color-base-letter);
+}
+
+.likes{
+
+margin-top: .8rem;
+
+}
+
+.likes img{
+
+width: 4rem;
+height: 4rem;
+
+}
+
+.likes img:nth-child(2) {
+    margin-left: 1rem; /* Puedes ajustar el valor del margen según tus preferencias */
+  }
+
+
+  .sidebar{
+
+    padding: 2.2rem 0 0 2.6rem
+
+  }
+
+
+  main .text-main, main .sidebar{
+
+    font-size: 1.6rem;
+    
+   
+    line-height: 160%;
+    padding: 0 2.2rem;
+    color: var(--color-base-p);
+  }
+
+  
+
+
+
+
+
+
+.sidebar .card {
+margin-top: 3.2rem;
+    display: flex;
+    gap: 1.6rem;
+     
+   
+
+
+}
+.card h2{
+
+
+    font-size:1.8rem;
+    line-height: 160%;
+    font-weight: 700;
+
+}
+
+
+.card div p{
+
+    font-size: 1.4rem;
+    line-height: 160%;
+    width: 21.5rem;
+    height: 8rem;
+    
+}
+
+.card img {
+
+    height: 8.4rem;
+
+
+}
+
+
+
+
+
+
+footer{
+
+    background-color: var(--color-base-explorer);
+text-align: center;
+height: 6.4rem;
+padding: 1.6rem;
+font-size: 1.6rem;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+color: #fff;
+margin-top: 4.1rem;
+}
+
