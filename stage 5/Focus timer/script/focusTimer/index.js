@@ -6,7 +6,7 @@ export function start(minutes,seconds){
 console.log(minutes,seconds)
 
 state.minutes = minutes
-state.second = seconds
+state.seconds = seconds
 
 events.registerControls()
 
