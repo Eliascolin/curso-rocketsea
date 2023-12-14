@@ -1,5 +1,22 @@
 import state from "./state.js"
 import * as el from "./elements.js" 
+
+
+
+export function contdown(){
+
+if(!state.isRunning){
+
+    return
+
+}
+console.log("iniciou")
+
+setTimeout(()=>contdown(),1000)
+
+}
+
+
 export function updateDisplay(minutes,seconds){
 
 
