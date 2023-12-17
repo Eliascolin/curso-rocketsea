@@ -8,8 +8,10 @@ console.log(minutes,seconds)
 state.minutes = minutes
 state.seconds = seconds
 
-timer.updateDisplay(1,4)
+timer.updateDisplay()
 
 events.registerControls()
+
+events.setMinutes()
 
 }
