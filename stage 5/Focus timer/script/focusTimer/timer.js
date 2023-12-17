@@ -6,6 +6,7 @@ import { kitchenTimer } from "./sound.js"
 
 export function contdown(){
 
+    clearTimeout(state.countdownId)
 if(!state.isRunning){
 
     return
@@ -39,7 +40,7 @@ return
 
 updateDisplay(minutes,seconds)
 
-setTimeout(()=>contdown(),1000)
+state.countdownId = setTimeout(()=>contdown(),1000)
 
 }
 
