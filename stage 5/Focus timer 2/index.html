@@ -1,15 +1,82 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" class="running">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style./style.css">
-    <script src="./script/main.js" type="module"></script>
+
+    <script src="./script/main.js" defer type="module"></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
 </head>
 <body>
 
-    <img src="./img/tree.svg" alt="">
+    <main class="flex">
+
+<section id="timer">
+
+<div class="flex" >
+
+    <span id="minutes">25</span>
+    <span>:</span>
+    <span id="seconds">00</span>
+
+
+</div>
+
+<div id="controls" class="flex">
+
+
+    <button 
+    
+    class="ph ph-play-circle">
+        
+    </button>
+    <button
+   
+     class="ph ph-pause-circle">
+        
+    </button>
+   
+    <button
+  
+     class="ph ph-stop-circle secondary">
+       
+    </button>
+    <button
+
+    class="ph-bold ph-plus">
+        
+    </button>
+    <button
+    
+     class="ph-bold ph-minus">
+       
+    </button>
+
+
+
+</div>
+
+
+</section>
+
+
+<section id="sons">
+
+    
+    <button><img src="./img/img sons/tree.svg" alt=""></button>
+    <button><img src="./img/img sons/treePress.svg" alt=""></button>
+    <button><img src="./img/img sons/cloud.svg" alt=""></button>
+    <button><img src="./img/img sons/cloudPress.svg" alt=""></button>
+    <button><img src="./img/img sons/coffe.svg" alt=""></button>
+    <button><img src="./img/img sons/coffePress.svg" alt=""></button>
+    <button><img src="./img/img sons/fireplace.svg" alt=""></button>
+<button><img src="./img/img sons/fireplacePress.svg" alt=""></button>
+</section>
+
+
+    </main>
     
 </body>
 </html>
