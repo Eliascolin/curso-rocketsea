@@ -1,0 +1,97 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    
+    }
+    
+    
+    :root{
+    
+    
+    --time-color:hsla(240, 6%, 21%, 1);
+    --button-color:hsl(0, 0%, 100%);
+
+    font-size: clamp(40%, 1% + 2vw, 62,5%);
+    }
+    
+    body{
+    
+    display: grid;
+    height: 100vh;
+    place-content: center;
+    
+    
+    }
+    
+    
+    
+    .flex{
+    
+    display: flex;
+    
+    
+    }
+    
+    
+    
+    
+    #timer .flex{
+    
+    color: var(--time-color);
+    justify-content: center;
+    font-size:7.8rem;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+text-transform: uppercase;
+    
+    }
+
+    #controls{
+
+gap: 1rem;
+margin-top: .8rem;
+    }
+
+
+    #controls button{
+
+
+font-size: 3rem;
+        
+    }
+    button{
+
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    color: var(--time-color);
+
+   }
+
+
+
+   main #sons{
+
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    
+    gap: 2rem;
+    margin-left: 12rem;
+
+
+   }
+
+   .running  .ph-play-circle,
+.playMusic .musicStop,
+  html:not(.playMusic) .musicOn,
+  html:not(.running) .ph-pause-circle, 
+  html:not(.running) .ph-stop-circle{
+
+display: none;
+
+
+  }
