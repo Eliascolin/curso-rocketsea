@@ -1,4 +1,7 @@
 
-import { start } from "./index.js";
+import * as FocusTimer from "./index.js";
 
-start()
+
+FocusTimer.start(0,4)
+
+

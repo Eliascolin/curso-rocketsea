@@ -4,3 +4,17 @@
 
 
 export{controls,controlsSons}
+
+export const timer = document.getElementById("editTimer")
+
+export const minutes = document.getElementById("minutes")
+
+
+export const seconds = document.getElementById("seconds")
+
+
+
+
+
+
+

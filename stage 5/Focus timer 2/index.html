@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="pt-br" class="running">
+<html lang="pt-br" >
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./style./style.css">
+    <link rel="stylesheet" href="./style/style.css">
 
     <script src="./script/main.js" defer type="module"></script>
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
@@ -15,11 +15,11 @@
 
 <section id="timer">
 
-<div class="flex" >
+<div class="flex" id="editTimer">
 
-    <span id="minutes">25</span>
+    <span id="minutes" data-action="set">00</span>
     <span>:</span>
-    <span id="seconds">00</span>
+    <span id="seconds" data-action="set">00</span>
 
 
 </div>
@@ -29,27 +29,30 @@
 
     <button 
     
+    data-action="toggleRuning"
+
     class="ph ph-play-circle">
         
     </button>
     <button
    
+    data-action="toggleRuning"
      class="ph ph-pause-circle">
         
     </button>
    
     <button
-  
+    data-action="reset"
      class="ph ph-stop-circle secondary">
        
     </button>
     <button
-
+    data-action="morTime"
     class="ph-bold ph-plus">
         
     </button>
     <button
-    
+    data-action="minusTime"
      class="ph-bold ph-minus">
        
     </button>
@@ -63,16 +66,16 @@
 
 
 <section id="sons">
-
     
-    <button><img src="./img/img sons/tree.svg" alt=""></button>
-    <button><img src="./img/img sons/treePress.svg" alt=""></button>
-    <button><img src="./img/img sons/cloud.svg" alt=""></button>
-    <button><img src="./img/img sons/cloudPress.svg" alt=""></button>
-    <button><img src="./img/img sons/coffe.svg" alt=""></button>
-    <button><img src="./img/img sons/coffePress.svg" alt=""></button>
-    <button><img src="./img/img sons/fireplace.svg" alt=""></button>
-<button><img src="./img/img sons/fireplacePress.svg" alt=""></button>
+    
+    <button   class="musicStop""><img data-music='tree' src="./img/img sons/tree.svg" alt=""></button>
+    <button  class="musicOn"><img data-music='tessPress' src="./img/img sons/treePress.svg" alt=""></button>
+    <button  class="musicStop"><img data-music='cloud' src="./img/img sons/cloud.svg" alt=""></button>
+    <button  class="musicOn"><img data-music='cloudPress' src="./img/img sons/cloudPress.svg" alt=""></button>
+    <button  class="musicStop"><img data-music='coffe' src="./img/img sons/coffe.svg" alt=""></button>
+    <button class="musicOn"><img data-music='coffePress' src="./img/img sons/coffePress.svg" alt=""></button>
+    <button  class="musicStop"><img data-music='fire' src="./img/img sons/fireplace.svg" alt=""></button>
+<button class="musicOn"><img data-music='fireplacePress' src="./img/img sons/fireplacePress.svg" alt=""></button>
 </section>
 
 

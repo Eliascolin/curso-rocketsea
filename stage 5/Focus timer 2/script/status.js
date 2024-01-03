@@ -1,6 +1,6 @@
 export default{
-minutes:0,
+minutes:20,
 seconds:0,
 isRunning:false,
-isMute:true,
+isMute:true
 }
