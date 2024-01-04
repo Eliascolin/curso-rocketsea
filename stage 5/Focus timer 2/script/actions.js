@@ -4,6 +4,8 @@ import * as timer from "./timer.js"
 
 import * as el from "./elements.js"
 
+import * as audio from "./sounds.js"
+
 export function toggleRuning(){
 
 state.isRunning = document.documentElement.classList.toggle("running")
@@ -11,6 +13,8 @@ state.isRunning = document.documentElement.classList.toggle("running")
 timer.countdown()
 
 }
+
+
 
 
 export function set(){
@@ -76,5 +80,24 @@ export function minusTime(){
     
     timer.ubdateDisplay(minutes,seconds)
 }
+
+
+
+export function tree(){
+
+//audio.floresta.play()
+
+console.log("tree")
+
+}
+
+
+export function cloud(){}
+
+
+export function coffe(){}
+
+
+export function fire(){}
 
 

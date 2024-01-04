@@ -86,12 +86,15 @@ font-size: 3rem;
    }
 
    .running  .ph-play-circle,
-.playMusic .musicStop,
-  html:not(.playMusic) .musicOn,
+  .playMusic .musicStop,
+  html:not(.playMusic)  .musicOn, 
   html:not(.running) .ph-pause-circle, 
   html:not(.running) .ph-stop-circle{
 
 display: none;
 
-
   }
+
+
+ 
+

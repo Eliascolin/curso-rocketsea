@@ -30,6 +30,16 @@ controls.controlsSons.addEventListener("click",(event)=>{
     
     const actionMusic = event.target.dataset.music
 
+  
+ const classAdd = event.target
+
+    classAdd.classList.toggle(".stop")
+
+    document.documentElement.classList.toggle("playMusic")
+
+    console.log(classAdd)
+
+
  if(typeof actions[actionMusic] !="function"){
 
     return
@@ -42,6 +52,26 @@ controls.controlsSons.addEventListener("click",(event)=>{
     })
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 time.timer.addEventListener("click",(event)=>{
@@ -64,6 +94,24 @@ time.timer.addEventListener("click",(event)=>{
         
         
         })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
