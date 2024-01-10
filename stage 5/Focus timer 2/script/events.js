@@ -26,18 +26,22 @@ actions[action]()
 })
 
 
+
+
 controls.controlsSons.addEventListener("click",(event)=>{
     
     const actionMusic = event.target.dataset.music
 
+    
   
+
+
  const classAdd = event.target
 
     classAdd.classList.toggle(".stop")
 
-    document.documentElement.classList.toggle("playMusic")
-
-    console.log(classAdd)
+    
+ 
 
 
  if(typeof actions[actionMusic] !="function"){
@@ -58,27 +62,11 @@ controls.controlsSons.addEventListener("click",(event)=>{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 time.timer.addEventListener("click",(event)=>{
 
     const actionTimer = event.target.dataset.action
 
-
+      
 
 
 
@@ -96,34 +84,18 @@ time.timer.addEventListener("click",(event)=>{
         })
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         export function setMinutes(){
 
 time.minutes.addEventListener("focus",() =>{
 
     time.minutes.textContent =""
+    time.seconds.textContent=""
     
 })
 
 time.minutes.onkeypress = (event) => /\d/.test(event.key)
+
+time.seconds.onkeypress = (event) => /\d/.test(event.key)
 
 time.minutes.addEventListener('blur',(event)=>{
 
@@ -138,6 +110,22 @@ status.seconds = 0
 ubdateDisplay()
 time.minutes.removeAttribute("contenteditable")
 })
+
+
+
+time.seconds.addEventListener('blur',(event)=>{
+
+    let time = event.currentTarget.textContent
+    
+    time = time > 60 ? 60 : time
+    
+    status.minutes = time
+    
+    status.seconds = 0
+    
+    ubdateDisplay()
+    time.seconds.removeAttribute("contenteditable")
+    })
 
         }
 

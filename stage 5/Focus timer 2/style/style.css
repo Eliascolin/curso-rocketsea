@@ -86,10 +86,16 @@ font-size: 3rem;
    }
 
    .running  .ph-play-circle,
-  .playMusic .musicStop,
-  html:not(.playMusic)  .musicOn, 
-  html:not(.running) .ph-pause-circle, 
-  html:not(.running) .ph-stop-circle{
+  .playMusic .tree,
+  .playMusic .cloud,
+  .playMusic .coffe,
+  .playMusic .fire,
+  div:not(.playMusic) .cloudPress,
+  div:not(.playMusic)  .tessPress, 
+  div:not(.playMusic)  .coffePress,
+  div:not(.playMusic)  .fireplacePress,
+  div:not(.running) .ph-pause-circle, 
+  div:not(.running) .ph-stop-circle{
 
 display: none;
 

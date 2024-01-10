@@ -16,6 +16,22 @@ timer.countdown()
 
 
 
+el.imagemSons.forEach(function(div){
+
+div.addEventListener("click",()=>{
+
+
+div.classList.toggle("playMusic")
+
+console.log(div)
+
+})
+
+
+
+})
+
+
 
 export function set(){
 
@@ -85,19 +101,36 @@ export function minusTime(){
 
 export function tree(){
 
-//audio.floresta.play()
+audio.floresta.play()
 
-console.log("tree")
+
+
 
 }
 
 
-export function cloud(){}
+export function cloud(){
+
+audio.chuva.play()
 
 
-export function coffe(){}
+}
 
 
-export function fire(){}
+export function coffe(){
+
+
+audio.coffe.play()
+
+
+}
+
+
+export function fire(){
+
+audio.lareira.play()
+
+
+}
 
 
