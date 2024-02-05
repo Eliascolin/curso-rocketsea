@@ -1,0 +1,132 @@
+*{
+margin:0;
+padding: 0;
+box-sizing: border-box;
+text-decoration: none;
+}
+
+
+
+:root{
+    font-size: clac(40%, 1% + 2vw, 62,5%);
+    
+    --colorTex-h1:rgba(225, 225, 230, 1);
+
+    --colotTex-geral:rgba(255, 255, 255, 1);
+
+    --colorParrafo:rgba(225, 225, 230, 1);
+
+    font-family: 'Roboto', sans-serif;
+}
+
+p{
+
+color: var(--colorParrafo);
+font-weight: 400;
+}
+
+h1{
+
+
+color: var(--colorTex-h1);
+}
+
+
+body{
+
+height: 100vh;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   overflow: hidden;
+}
+
+/* home */
+
+
+.home{
+
+    background-image: url(../img/mountains-universe-1.png);
+    
+}
+
+.home main{
+display: grid;
+place-content: center;
+height:100vh;
+text-align: center;
+color: var(--colorTex-h1);
+}
+
+.home div button{
+margin-top: 2rem;
+border: 0.1rem solid white ;
+border-radius: 0.4rem;
+background: none;
+cursor: pointer;
+padding: 0.8rem 2rem;
+}
+
+a{
+    color: var(--colotTex-geral);
+    
+}
+
+
+header {
+
+padding: 2.5rem 4.5rem;
+
+}
+
+header  ul{
+
+display: flex;
+ gap: 2rem;
+ align-items: center;
+}
+
+
+/* universo */
+
+.universo{
+
+    background-image: url(../img/mountains-universe02.png);
+    
+    
+    }
+
+    .universo main{
+       
+        max-width:40.5rem ;
+        height: 13rem;
+        }
+
+/* universo  Exploraçao */
+
+
+
+
+.universo main, .exprore main{
+margin-top: 4rem;
+margin-left: 6.4rem;
+max-width:40.5rem ;
+height: 13rem;
+}
+
+
+.universo main h1, .exprore main h1{
+
+    margin-bottom: 1rem;
+}
+
+
+/* exprore */
+
+
+.exprore{
+
+
+background-image: url(../img/mountains-universe-3.png);
+
+}
