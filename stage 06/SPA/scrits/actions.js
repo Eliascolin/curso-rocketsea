@@ -31,9 +31,9 @@ const {pathname} = window.location
 const route = routes[pathname] || routes[404]
 
 
-// fetch(route)
-// .then(data=>data.text())
-// .then(html=>console.log(html))
+ fetch(route)
+ .then(data=>data.text())
+ .then(html=>console.log(html))
 
 console.log(pathname)
 console.log(route)
