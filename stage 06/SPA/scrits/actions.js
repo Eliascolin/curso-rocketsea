@@ -1,42 +1,77 @@
-const routes = {
+import { appContain } from "./elemens.js"
 
-    '/exprorer': '/pages/exprore.html',
-    404 : "/pages/404.html",
-    '/universo' : '/pages/universo.html'
+class Route{
+
+
+
+add(routeName,page){
+
+this.routes[routeName]= page
+
+
 
 }
 
 
-
-
-
-export function route(event){
+   route(event){
 
    
-    event = event || window.event
-
-    event.preventDefault()
-
-    window.history.pushState({},"", event.target.href)
-    handle()
+        event = event || window.event
     
-    }
+        event.preventDefault()
+    
+        window.history.pushState({},"", event.target.href)
+        this.handle()
+        
+        }
 
 
-    export function handle(){
 
-const {pathname} = window.location
-// windows.location.pathname pega o link depois do nome do dominio
+        handle(){
 
-const route = routes[pathname] || routes[404]
+            const {pathname} = window.location
+            
+            
+            
+            const route = this.routes[pathname] || this.routes['404']
+            
+             fetch(route)
+              .then(data=>data.text())
+              .then(html=>{
+            
+            appContain.innerHTML= html
+            
+              })
+            
+            
+            
+            
+            
+                }
+
+}
 
 
- fetch(route)
- .then(data=>data.text())
- .then(html=>console.log(html))
-
-console.log(pathname)
-console.log(route)
+export default new Route()
 
 
-    }
+
+// const routes = {
+//     '/':"/pages/home.html",
+//     '/exprorer': '/pages/exprore.html',
+//     '404' : "/pages/404.html",
+//     '/universo' : '/pages/universo.html'
+
+// }
+
+
+
+
+
+
+
+
+ 
+
+
+ window.onpopstate = () => handle()
