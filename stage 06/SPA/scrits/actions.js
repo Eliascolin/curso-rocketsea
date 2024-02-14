@@ -50,4 +50,7 @@ appContain.innerHTML= html
     }
 
 
+    handle()
+
+
  window.onpopstate = () => handle()
