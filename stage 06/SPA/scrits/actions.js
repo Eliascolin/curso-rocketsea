@@ -1,16 +1,20 @@
 import { appContain } from "./elemens.js"
 
-class Route{
 
 
+export class Router{
+
+routes = {}
 
 add(routeName,page){
 
-this.routes[routeName]= page
+this.routes[routeName] = page
 
 
 
 }
+
+
 
 
    route(event){
@@ -43,35 +47,15 @@ this.routes[routeName]= page
             
               })
             
-            
-            
-            
-            
                 }
+
+
+               
+
 
 }
 
 
-export default new Route()
 
 
 
-// const routes = {
-//     '/':"/pages/home.html",
-//     '/exprorer': '/pages/exprore.html',
-//     '404' : "/pages/404.html",
-//     '/universo' : '/pages/universo.html'
-
-// }
-
-
-
-
-
-
-
-
- 
-
-
- window.onpopstate = () => handle()
