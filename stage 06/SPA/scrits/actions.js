@@ -12,7 +12,9 @@ routes = {}
 
   "/":"../img/mountains-universe-1.png",
 
-  "/exprorer" :"../img/mountains-universe-3.png"
+  "/exprorer" :"../img/mountains-universe-3.png",
+
+ "/404":"../img/error_image.jpeg"
 
 
   }
@@ -34,6 +36,8 @@ this.routes[routeName] = page
         event = event || window.event
     
         event.preventDefault()
+
+        event.target.style.color = "blue"
     
         window.history.pushState({},"", event.target.href)
         this.handle()
@@ -48,7 +52,7 @@ this.routes[routeName] = page
             
             
             
-            const route = this.routes[pathname] || this.routes['404']
+            const route = this.routes[pathname] || this.routes['/404']
 
             
 

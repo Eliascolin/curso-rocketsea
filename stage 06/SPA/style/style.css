@@ -41,17 +41,17 @@ height: 100vh;
    overflow: hidden;
 }
 
-/* home */
+/* center */
 
 
-.home{
+.center{
 
    
     height: 100vh;
     
 }
 
-.home main{
+.center main{
 display: grid;
 place-content: center;
 height:100vh;
@@ -59,7 +59,7 @@ text-align: center;
 color: var(--colorTex-h1);
 }
 
-.home div button{
+.center div button{
 margin-top: 2rem;
 border: 0.1rem solid white ;
 border-radius: 0.4rem;
@@ -120,3 +120,8 @@ height: 13rem;
 
 
 
+#main-error h1{
+
+
+   color: black;
+}
