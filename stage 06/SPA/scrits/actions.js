@@ -6,6 +6,17 @@ export class Router{
 
 routes = {}
 
+ backgrounds = { 
+
+  "/universo":"../img/mountains-universe02.png",
+
+  "/":"../img/mountains-universe-1.png",
+
+  "/exprorer" :"../img/mountains-universe-3.png"
+
+
+  }
+
 add(routeName,page){
 
 this.routes[routeName] = page
@@ -38,6 +49,10 @@ this.routes[routeName] = page
             
             
             const route = this.routes[pathname] || this.routes['404']
+
+            
+
+           this.changeBackground(pathname)
             
              fetch(route)
               .then(data=>data.text())
@@ -50,7 +65,16 @@ this.routes[routeName] = page
                 }
 
 
-               
+               changeBackground(pathname){
+
+                 const background = this.backgrounds[pathname] || "/"
+
+
+                
+                 document.body.style.backgroundImage = `url(${background})`
+
+                   console.log(background)
+                 }
 
 
 }
