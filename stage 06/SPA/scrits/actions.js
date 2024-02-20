@@ -14,7 +14,7 @@ routes = {}
 
   "/exprorer" :"../img/mountains-universe-3.png",
 
- "/404":"../img/error_image.jpeg"
+ 
 
 
   }

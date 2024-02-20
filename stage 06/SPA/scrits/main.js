@@ -33,4 +33,4 @@ elemes.exploracaoLink.addEventListener('click', () => router.route())
 
 
 //Evento de error 
-elemes.errorLink.addEventListener('click', () => router.route())
+// elemes.errorLink.addEventListener('click', () => router.route())
