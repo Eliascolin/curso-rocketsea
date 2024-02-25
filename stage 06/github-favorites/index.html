@@ -1,124 +1,128 @@
 <!DOCTYPE html>
 <html lang="pt-bt">
+
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Github Favorites</title>
     <link rel="stylesheet" href="./style/style.css">
-     <link rel="preconnect" href="https://fonts.googleapis.com">
- <link rel="stylesheet" href="./stylr/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-  <script src="./script/main.js" type="module"  defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="./stylr/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <script src="./script/main.js" type="module" defer></script>
 </head>
+
 <body>
     
+    <div id="app">
+        
+        <header>
+            
+            
 
-<div id="app">
+            
+            <h1>Github favoritos</h1>
+            
+            <div class="search">
+                <label for="input-search" class="sr-onl">Usuario do github</label>
+                <input type="text" id="input-search" placeholder="Usuario de Github">
+                <button>&plus; </button>
+                
+                
+                
+            </div>
+            
+        </header>
 
-<header>
+        <table>
+            
+            <thead>
+                
+                <tr>
 
+                    <th>Usuario</th>
+                    <th>Repositorios</th>
+                    <th>Seguidores</th>
+                    <th></th>
+                    
+                </tr>
+                
 
+            </thead>
+            
+            <tbody>
+                
+                <tr>
+                    
+                    <td class="user">
 
-<h1>Github favoritos</h1>
+                        <img src="https://github.com/Eliascolin.png" alt="imagen">
 
-<div class="search">
-    <label for="input-search" class="sr-onl">Usuario do github</label>
-<input type="text"  id="input-search" placeholder="Usuario de Github">
-<button>&plus; </button>
-
-
-
-</div>
-
-</header>
-
-<table>
-
-<thead>
-
-<tr>
-
-<th>Usuario</th>
-<th>Repositorios</th>
-<th>Seguidores</th>
-<th></th>
-
-</tr>
-
-
-</thead>
-
-<tbody>
-
-<tr>
-
-<td class="user">
-    
-    <img src="https://github.com/Eliascolin.png" alt="imagen">
-
-    <a href="https://github.com/Eliascolin" target="_blank">
-
-        <p>Nome</p>
-        <span>Github nome</span>
-
-    </a>
-    
-
-</td>
-<td class="repositories">
-76
-
-</td>
-<td class="followers">
-
-    9589
-</td>
-<td><button class="remove">&times;</button></td>
-
-</tr>
+                        <a href="https://github.com/Eliascolin" target="_blank">
+                            
+                            <p>Nome</p>
+                            <span>Github nome</span>
+                            
+                        </a>
 
 
+                    </td>
+                    <td class="repositories">
+                        76
+                        
+                    </td>
+                    <td class="followers">
+                        
+                        9589
+                    </td>
+                    <td><button class="remove">&times;</button></td>
+
+                </tr>
+
+                
+                
+                <tr>
+
+                    <td class="user">
+                        
+                        <img src="https://github.com/diego3g.png" alt="imagen">
+                        
+                        <a href="https://github.com/diego3g.png" target="_blank">
+                            
+                            <p>diego</p>
+                            <span>diego span</span>
+                            
+                        </a>
+
+                        
+                    </td>
+                    <td class="repositories">
+                        48
+                        
+                    </td>
+                    <td class="followers">
+                        
+                        22503
+                    </td>
+                    <td><button class="remove">&times;</button></td>
+                    
+                </tr>
+
+            </tbody>
+            
+            
+            
+            
+            
+            
+
+        </table>
 
 
-<td class="user">
-    
-    <img src="https://github.com/diego3g.png" alt="imagen">
-
-    <a href="https://github.com/diego3g.png" target="_blank">
-
-        <p>diego</p>
-        <span>diego span</span>
-
-    </a>
-   
-
-</td>
-<td class="repositories">
-48
-
-</td>
-<td class="followers">
-
-    22503
-</td>
-<td><button class="remove">&times;</button></td>
-
-</tr>
-
-</tbody>
-
-
-
-
-
-
-</table>
-
-
-</div>
+    </div>
 
 
 
@@ -126,4 +130,5 @@
 
 
 </body>
+
 </html>
