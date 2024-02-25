@@ -1,3 +1,24 @@
+export class GithubUser{
+
+static search(username){
+
+const enspoint = `https://api.github.com/users/${username}`
+
+
+return fetch(enspoint)
+.then(data => data.json())
+.then(({login, name, public_repos, followers}) => ({
+
+login,
+name,
+public_repos,
+followers
+}))
+}
+
+}
+
+
 //classe que vai conter a logica dos dados ->como serao estruturados
 
 export class favorites{
@@ -6,6 +27,9 @@ export class favorites{
 
         this.root =document.querySelector(root)
 this.load()
+
+GithubUser.search('eliascolin').then(user =>console.log(user))
+
     }
 
 
