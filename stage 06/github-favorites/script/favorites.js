@@ -11,31 +11,14 @@ this.load()
 
 load(){
 
-   this.entries =[{
 
-        login:"mayBrito",
-        name:"Mayk Brito",
-        public_repos:'76',
-        followers:"12000"
-        
-        
-        },
-        
-        {
-        
-            login:"diego3g",
-            name:"Diego Fernandes",
-            public_repos:'76',
-            followers:"12000"
-        
-        },
-        
-        
-        
-        
-        
-        ]
+  this.entries = JSON.parse(localStorage.getItem('@github-favorites:')) || []
 
+console.log(this.entries)
+
+
+
+ 
    
 
 
@@ -47,7 +30,8 @@ const filteredEntries = this.entries
 .filter(entry => 
   entry.login !==user.login)
 
-console.log(filteredEntries)
+this.entries = filteredEntries
+this.update()
 }
 
 }
