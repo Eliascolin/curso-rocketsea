@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github Favorites</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="./script/main.js" defer type="module"></script>
+</head>
+<body>
+    
+    <div id="app">
+
+        <header>
+    
+            <h1>
+                {<span class="estrella">&starf;</span>}
+            </h1>
+    
+            <div class="search">
+                <label for="input-search" class="sr-only">Digite o Github username que quer favoritar</label>
+                <input type="text" id="input-search" placeholder="Digite o Github username que quer favoritar">
+                <button>&star; FAVORITAR</button>
+            </div>
+    
+        </header>
+    
+        <table>
+            <thead>
+                <tr>
+                    <th>User</th>
+                    <th>Repositories</th>
+                    <th>Followers</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+    
+            <tbody>
+                <tr>
+                    <td class="user">
+                        <img src="https://github.com/Eliascolin.png" alt="imagen">
+                        <a href="https://github.com/Eliascolin" target="_blank">
+                            <p>Elias</p>
+                            <span>EliasColin</span>
+                        </a>
+                    </td>
+                    <td class="repositories">76</td>
+                    <td class="followers">53456</td>
+                    <td><button class="remove">Remover</button></td>
+                </tr>
+            </tbody>
+        </table>
+    
+    </div>
+    
+
+<div class="start">
+
+<img src="./img/Estrela.svg" alt="imagem de uma strela">
+
+<h2>Nenhum favorito ainda</h2>
+
+</div>
+
+
+</body>
+</html>
