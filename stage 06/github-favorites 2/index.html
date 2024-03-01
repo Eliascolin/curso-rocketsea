@@ -2,9 +2,12 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Github Favorites</title>
     <link rel="stylesheet" href="./style/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <script src="./script/main.js" defer type="module"></script>
 </head>
 <body>
@@ -14,7 +17,9 @@
         <header>
     
             <h1>
-                {<span class="estrella">&starf;</span>}
+                {<span class="start">&starf;</span>}
+
+                GitFav
             </h1>
     
             <div class="search">
@@ -24,19 +29,24 @@
             </div>
     
         </header>
+
+
+
     
         <table>
             <thead>
+
                 <tr>
                     <th>User</th>
                     <th>Repositories</th>
                     <th>Followers</th>
                     <th>Action</th>
                 </tr>
+               
             </thead>
     
             <tbody>
-                <tr>
+                <!-- <tr>
                     <td class="user">
                         <img src="https://github.com/Eliascolin.png" alt="imagen">
                         <a href="https://github.com/Eliascolin" target="_blank">
@@ -48,19 +58,39 @@
                     <td class="followers">53456</td>
                     <td><button class="remove">Remover</button></td>
                 </tr>
+
+
+
+
+                <tr>
+                    <td class="user">
+                        <img src="https://github.com/Eliascolin.png" alt="imagen">
+                        <a href="https://github.com/Eliascolin" target="_blank">
+                            <p>Elias</p>
+                            <span>EliasColin</span>
+                        </a>
+                    </td>
+                    <td class="repositories">76</td>
+                    <td class="followers">53456</td>
+                    <td><button class="remove">Remover</button></td>
+                </tr> -->
+
             </tbody>
         </table>
-    
+
+       
+        <div class="none">
+
+
+            <img src="./img/Estrela.svg" alt="imagem de uma strela">
+            
+            <h2>Nenhum favorito ainda</h2>
+            
+            </div>
     </div>
     
 
-<div class="start">
 
-<img src="./img/Estrela.svg" alt="imagem de uma strela">
-
-<h2>Nenhum favorito ainda</h2>
-
-</div>
 
 
 </body>
