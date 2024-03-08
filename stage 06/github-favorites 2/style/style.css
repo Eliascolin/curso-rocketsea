@@ -80,8 +80,8 @@
      }
     
      .search input{
-        height: 2rem;
-        width: 20rem;
+        height: 3rem;
+        width: 25rem;
         background-color: var(--iput-color);
         padding: 1rem;
         border-radius: .4rem;
@@ -102,6 +102,7 @@
     font-size: 1.5rem;
     border-radius: .4rem;
     border: none;
+    cursor: pointer;
     
         }
     
@@ -117,7 +118,7 @@
     
         padding: 1.5rem;
         background-color:var(--Table-secundariColor);
-       
+      
         
     
     }
@@ -179,6 +180,15 @@
     
         }
     
+        td .remove{
+
+background:none;
+color: var(--color-textButoon);
+border: none;
+cursor: pointer;
+
+
+        }
     
 
         .none{
