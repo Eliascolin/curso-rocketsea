@@ -1,0 +1,3 @@
+
+Objetivo
+Este repositório contém exemplos de comandos HTML e CSS que aprendi recentemente. No HTML, foram abordados comandos como <!DOCTYPE html>, <html>, <head>, <meta>, <title>, <link>, e <body>. No CSS, aprendi sobre a seleção de elementos por ID e classe, definição de estilos como font-family, margin, text-align, e muito mais. O objetivo deste arquivo é fornecer uma rápida visão geral dos comandos HTML e CSS abordados neste projeto.
